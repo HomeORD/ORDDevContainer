@@ -4,6 +4,7 @@
     [class.selected]="hero === selectedHero"
     (click)="onSelect(hero)">
     <span class="badge">{{hero.id}}</span> {{hero.name}}
+    <p>Test</p>
   </li>
 </ul>
 
@@ -18,3 +19,13 @@
   </div>
 
 </div>
+
+
+
+<!-- <div class="picture1">&nbsp;</div> -->
+
+<div ng-init="picture1 = 'Organic4.jpg'">
+    <h1>ORGANIC</h1>
+    <img ng-src="{{picture1}}">
+</div>
+

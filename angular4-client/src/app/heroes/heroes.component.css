@@ -46,3 +46,7 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+
+.heroes .picture1 {
+background-image: url(C:/Users/jayanti.tn/ORDDevContainer/angular4-client/src/assets/Organic4.jpg);
+}
