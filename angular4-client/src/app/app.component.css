@@ -1,0 +1,5 @@
+.image{
+     height:40em; background-size:cover; width:auto;
+     background-image: url('../fruits.png');
+     background-position:50% 50%;
+   }

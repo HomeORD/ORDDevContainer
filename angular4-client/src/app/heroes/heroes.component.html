@@ -1,4 +1,5 @@
 <h2>My Heroes</h2>
+<!-- <img width="300" alt="Just Try" src="..\test_4.JPG"> -->
 <ul class="heroes">
   <li *ngFor="let hero of heroes"
     [class.selected]="hero === selectedHero"
@@ -8,13 +9,11 @@
 </ul>
 
 <div *ngIf="selectedHero">
-
-  <h2>{{ selectedHero.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{selectedHero.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedHero.name" placeholder="name">
-    </label>
-  </div>
-
+		  <h2>{{ selectedHero.name | uppercase }} Details</h2>
+  			<div><span>id: </span>{{selectedHero.id}}</div>
+  			<div>
+    			<label>name:
+      			<input [(ngModel)]="selectedHero.name" placeholder="name">
+    			</label>
+  			</div>
 </div>

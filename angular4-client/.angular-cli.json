@@ -9,7 +9,10 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "test_4.JPG",
+        "ISPRI_Logo.PNG",
+        "fruits.png"
       ],
       "index": "index.html",
       "main": "main.ts",
