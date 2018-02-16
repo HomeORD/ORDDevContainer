@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ContainerComponent} from './container/container.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { HeroesComponent } from './heroes/heroes.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

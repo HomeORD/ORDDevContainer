@@ -12,7 +12,9 @@
         "favicon.ico",
         "test_4.JPG",
         "ISPRI_Logo.PNG",
-        "fruits.png"
+        "fruits.png",
+        "Org6.jpg",
+        "Org5.jpg"
       ],
       "index": "index.html",
       "main": "main.ts",

@@ -1,5 +1,17 @@
-.image{
+.image1{
      height:40em; background-size:cover; width:auto;
      background-image: url('../fruits.png');
+     background-position:50% 50%;
+   }
+
+ .image2{
+     height:40em; background-size:cover; width:auto;
+     background-image: url('../Org6.jpg');
+     background-position:50% 50%;
+   }
+   
+.image3{
+     height:40em; background-size:cover; width:auto;
+     background-image: url('../Org5.jpg');
      background-position:50% 50%;
    }
