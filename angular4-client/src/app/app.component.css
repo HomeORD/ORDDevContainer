@@ -1,5 +1,52 @@
-.image{
+.image1{
      height:40em; background-size:cover; width:auto;
      background-image: url('../fruits.png');
      background-position:50% 50%;
    }
+
+   .image2{
+        height:40em; background-size:cover; width:auto;
+        background-image: url('../interior.png');
+        background-position:50% 50%;
+      }
+
+    body {
+    padding-top: 40px;
+}
+
+.header{
+  height: 60px;
+  background:red;
+  width:auto;
+}
+
+.header1{
+	background-color:red;
+  	height: 60px;
+	position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    z-index: 3;
+    top: 0
+}
+
+.announcement {
+    background-color: #80fad1;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    z-index: 3;
+    top: 0;
+}
+
+.menu {
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 80px;
+    position: relative;
+    z-index: 10;
+}
+

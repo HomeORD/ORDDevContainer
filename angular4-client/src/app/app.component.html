@@ -1,4 +1,42 @@
-<div class="image">
-<h1>{{title}}</h1>
+<!-- <div class="header" [@scrollAnimation]="state">
+  <img src="https://images.pexels.com/photos/37547/suit-business-man-business-man-37547.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+  <h2>This is a test</h2>
+</div>
+ -->
+<!-- <div class="sticky-nav-wrapper" [@scrollAnimation]="state">
+<h1>Hello Guru asadasd asdasdsad asdsadsadasdsad asdasdasdsad asdasdsadasd asdasddsad</h1>
+  <nav class="sticky-nav" ngStickyNav></nav>
+</div> -->
+<div class="announcement" >
+<p>Test header 1</p>
+</div>
+ <div class="header1" ng-sticky [offSet]="0" [addClass]="'is-sticky'" [@scrollAnimation]="state"> 
+  <div class="header1" ><h1>This is a test header</h1>
+  <div class="dropdown" dropdown [dropdownToggle]="false" (onOpen)="doSomeActionOnOpen()" (onClose)="doSomeActionOnClose()">
+    <button class="btn btn-primary" dropdown-open>My Heroes</button>
+    <ul class="dropdown-menu">
+        <li><a>Badman</a></li>
+        <li><a>Sadman</a></li>
+        <li><a>Lieman</a></li>
+    </ul>
+</div>
+</div> 
+</div>
+<!-- <div class="sticky-container" [@scrollAnimation]="state">
+        <div ng-sticky [offSet]="50" [addClass]="'is-sticky-red'">
+          <span><h1>This is a test Menusaassssssssssssssssssdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1></span>
+</div>
+</div>
+ -->
+<div class="image2">
+<!-- <h1>{{title}}</h1> -->
+<!-- <app-heroes></app-heroes> -->
+</div>
+<!-- <div class="box" [@scrollAnimation]="state">
+  <img src="https://images.pexels.com/photos/37547/suit-business-man-business-man-37547.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+</div> -->
+<div class="image2">
+<h1>Page 2</h1>
 <app-heroes></app-heroes>
 </div>
+

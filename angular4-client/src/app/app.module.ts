@@ -4,15 +4,23 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StickyNavModule } from 'ng2-sticky-nav';
+import { NgStickyDirective } from 'ng-sticky';
+import {DropdownModule} from "ng2-dropdown";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent
+    HeroesComponent,
+    NgStickyDirective
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    StickyNavModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
