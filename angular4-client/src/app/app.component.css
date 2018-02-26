@@ -4,6 +4,7 @@
      background-position:50% 50%;
    }
 
+<<<<<<< HEAD
    .image2{
         height:40em; background-size:cover; width:auto;
         background-image: url('../interior.png');
@@ -50,3 +51,16 @@
     z-index: 10;
 }
 
+=======
+ .image2{
+     height:40em; background-size:cover; width:auto;
+     background-image: url('../Org6.jpg');
+     background-position:50% 50%;
+   }
+   
+.image3{
+     height:40em; background-size:cover; width:auto;
+     background-image: url('../Org5.jpg');
+     background-position:50% 50%;
+   }
+>>>>>>> f87f4b0509ff3ac33e9d92ab55f792b9c7d70f35

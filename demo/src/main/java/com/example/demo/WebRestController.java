@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebRestController implements ErrorController{
 	 
 	private static final String PATH="/error";
-	@RequestMapping("/api/hi")  
-	    public String hi(){  
-	        return"Hello Guru from rest API!";  
-	    }
+//	@RequestMapping("/api/hi")  
+//	    public String hi(){  
+//	        return"Hello Guru from rest API!";  
+//	    }
 	
 	@RequestMapping(value = PATH)  
     public String defaultErrorMessage(){  
