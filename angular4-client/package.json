@@ -27,6 +27,7 @@
     "ng2-dropdown": "0.0.21",
     "ng2-sticky-nav": "^0.1.0",
     "rxjs": "^5.5.2",
+    "save": "^2.3.2",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
