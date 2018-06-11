@@ -1,0 +1,90 @@
+.image1{
+     height:40em; background-size:cover; width:auto;
+     background-image: url('../fruits.png');
+     background-position:50% 50%;
+   }
+
+   .image2{
+        height:40em; background-size:cover; width:auto;
+        background-image: url('../interior.png');
+        background-position:50% 50%;
+      }
+
+    body {
+    padding-top: 40px;
+}
+
+.header{
+  height: 60px;
+  background:red;
+  width:auto;
+}
+
+.header1{
+	background-color:#f9b0b0;
+  	height: 60px;
+	position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    z-index: 3;
+    top: 0;
+    cursor: pointer;
+}
+
+.announcement {
+    background-color: #80fad1;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    z-index: 3;
+    top: 0;
+}
+
+.menu {
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    padding: 0 80px;
+    position: relative;
+    z-index: 10;
+}
+
+  .menu1 {
+    height: 60px;
+    width: 100%;
+    background-color: #f9b0b0;
+    padding: 0 80px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+ .menu4{
+	background-color:#f9b0b0;
+  	height: 150px;
+	position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    z-index: 3;
+    top: 50;
+    cursor: pointer;
+    left:0%;
+
+ }
+
+#btMenu {
+    position: absolute;
+    padding-top: 5px;
+    left: 50%;
+    cursor: pointer;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    font-family: TSTARMonoRoundBol;
+    text-transform: uppercase;
+    font-size: 12px;
+}
