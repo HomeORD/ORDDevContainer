@@ -88,3 +88,16 @@
     text-transform: uppercase;
     font-size: 12px;
 }
+
+.header4 img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+.header5 h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
