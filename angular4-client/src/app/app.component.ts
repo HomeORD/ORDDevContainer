@@ -6,6 +6,9 @@ import {
   animate,
   transition  
 }from '@angular/animations';
+declare function require(path: string);
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-root',
@@ -27,6 +30,7 @@ import {
   ]
 })
 export class AppComponent {
+imageSrc = require('../assets/Logo.jpg');
   title = 'Tour of Heroes';
   state = 'hide';
   state1 = 'show';
@@ -42,6 +46,26 @@ export class AppComponent {
       this.buttonName = "Close";
     else
       this.buttonName = "Menu";
+  }
+  
+ slides = [
+    {img: "http://placehold.it/350x150/000000"},
+    {img: "http://placehold.it/350x150/111111"},
+    {img: "http://placehold.it/350x150/333333"},
+    {img: "http://placehold.it/350x150/666666"}
+  ];
+  slideConfig = {"slidesToShow": 4, "slidesToScroll": 4};
+ 
+  addSlide() {
+    this.slides.push({img: "http://placehold.it/350x150/777777"})
+  }
+ 
+  removeSlide() {
+    this.slides.length = this.slides.length - 1;
+  }
+ 
+  afterChange(e) {
+    console.log('afterChange');
   }
   
   public sections = [
@@ -67,4 +91,7 @@ export class AppComponent {
       }
 
     }
+    
+
+    
 }

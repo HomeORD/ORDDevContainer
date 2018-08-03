@@ -8,11 +8,28 @@
   <nav class="sticky-nav" ngStickyNav></nav>
 </div> -->
 
+<!-- <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+<script src="https://unpkg.com/slick-carousel@1.6.0/slick/slick.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//unpkg.com/slick-carousel@1.8.1/slick/slick.js"></script>
+
+ <script src="../bower_components/jquery/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/slick-carousel/slick/slick.js"></script>
+    <script src="../bower_components/angular-slick-carousel/dist/angular-slick.min.js"></script>
+
 <div class="announcement" [@scrollAnimation]="state1">
 <a>Test - 1 Header</a>
 </div>
  <div class="header1" ng-sticky [offSet]="0" [addClass]="'is-sticky'" [@scrollAnimation]="state"> 
- <img src="src/Logo.jpg" alt="logo" />
+ <img  src="{{imageSrc}}" alt="logo" height="35" width="100"/>
   <!-- <div class="header1" ><h1>This is a test header</h1> -->
  <!--  <div class="dropdown" dropdown [dropdownToggle]="false" (onOpen)="doSomeActionOnOpen()" (onClose)="doSomeActionOnClose()">
     <button class="btn btn-primary" dropdown-open>My Heroes</button>
@@ -23,7 +40,7 @@
     </ul>
 </div> -->
 <!-- <div class="menu1"> -->
-    <p (click)="toggle()" id="bt">{{buttonName}}</p>
+    <p (click)="toggle()" id="bt">{{buttonName}}</p> 
 	<ng-container *ngIf="show">
 		<div>
 			<a routerLink="/user" routerLinkActive="active">Users</a>
@@ -45,22 +62,75 @@
 	</ng-container>
 <!--   </div> -->
 </div>
-<!-- <div class="sticky-container" [@scrollAnimation]="state">
+<div class="sticky-container" [@scrollAnimation]="state">
         <div ng-sticky [offSet]="50" [addClass]="'is-sticky-red'">
           <span><h1>This is a test Menusaassssssssssssssssssdaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1></span>
 </div>
 </div>
- -->
+
 <div class="image2">
-<!-- <h1>{{title}}</h1> -->
-<!-- <app-heroes></app-heroes> -->
+<h1>{{title}}</h1>
+<app-heroes></app-heroes>
 </div>
-<!-- <div class="box" [@scrollAnimation]="state">
-  <img src="https://images.pexels.com/photos/37547/suit-business-man-business-man-37547.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
-</div> -->
+<div class="box" [@scrollAnimation]="state">
+  <!-- <img src="https://images.pexels.com/photos/37547/suit-business-man-business-man-37547.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"> -->
+</div>
 <div class="image2">
 <h1>Page 2</h1>
-<app-heroes></app-heroes>
+<!-- <div>
+ <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+          <img src="{{imageSrc}}" alt="" width="50%">
+    </div>
+</ngx-slick>
+<button (click)="addSlide()">Add</button>
+    <button (click)="removeSlide()">Remove</button>
+    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+    <button (click)="slickModal.unslick()">unslick</button>
+</div>  --> 
+
+<div>
+
+<!-- <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+              <img src="{{ imageSrc }}" alt="" width="100%">
+        </div>
+    </ngx-slick>
+ 
+    <button (click)="addSlide()">Add</button>
+    <button (click)="removeSlide()">Remove</button>
+    <button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
+    <button (click)="slickModal.unslick()">unslick</button> -->
+</div>
+
+<!-- <app-heroes></app-heroes> -->
+<div class="slick-track" style="opacity: 1; width: 3850px; transform: translate3d(-550px, 0px, 0px);" role="listbox">
+<div class="slide slick-slide slick-current slick-active" style="background-image: url(&quot;https://steepandjar.com//app/uploads/2015/03/tea31.jpg&quot;); width: 510px;" data-slick-index="0" aria-hidden="false" tabindex="0" role="option" aria-describedby="slick-slide00">
+				<div class="info">
+									<p class="type">Chai Tea</p>
+					<p class="titre">Cinnamon Sunset</p>
+										<button tabindex="0"><a href="https://steepandjar.com/product/cinnamon-sunset/" tabindex="0">About this tea</a></button>
+				</div>
+			</div>
+			<div class="slide slick-slide slick-current slick-active" style="background-image: url(&quot;https://steepandjar.com//app/uploads/2015/04/tea5.jpg&quot;); width: 627px;" tabindex="0" role="option" aria-describedby="slick-slide01" data-slick-index="1" aria-hidden="false">
+				<div class="info">
+									<p class="type">Black Tea</p>
+					<p class="titre">Lavender City</p>
+										<button tabindex="0"><a href="https://steepandjar.com/product/lavender-city/" tabindex="0">About this tea</a></button>
+				</div>
+			</div>
+			<div class="slide slick-slide" style="background-image: url(&quot;https://steepandjar.com//app/uploads/2015/02/tea21.jpg&quot;); width: 627px;" tabindex="-1" role="option" aria-describedby="slick-slide02" data-slick-index="2" aria-hidden="true">
+				<div class="info">
+									<p class="type">Jar</p>
+					<p class="titre">Peach Escape</p>
+										<button tabindex="-1"><a href="https://steepandjar.com/product/peach-escape/" tabindex="-1">About this tea</a></button>
+				</div>
+			</div>
+			
+			
+			</div>
+			
+			
 			<a routerLink="about">Link Text</a>
 			</div>
 <!-- <dropdown></dropdown> -->

@@ -15,6 +15,9 @@ import { RouterModule } from '@angular/router';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { routing } from './app.routing';
 import { AboutComponent } from './about/about.component';
+import { SlickModule } from 'ngx-slick';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SlickCarousel } from 'slick-carousel';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,9 @@ import { AboutComponent } from './about/about.component';
     HttpModule,
     UserModule,
     RouterModule,
-    routing
+    routing,
+    SlickModule.forRoot(),
+    SlickCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -96,6 +96,18 @@
   background: #555;
 }
 
+
+.slick-active {
+  background: red;
+}
+
+.slick-active + .slick-active {
+  background: blue;
+}
+
+.slick-active + .slick-active + .slick-active {
+  background: yellow;
+}
 .header5 h1 {
   position: relative;
   top: 18px;
