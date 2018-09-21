@@ -1,0 +1,45 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script>
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+
+
+<div  class="header1" [@scrollAnimation]="state" >
+<p (click)="toggle()" id="bt">{{buttonName}}</p>
+<ng-container *ngIf="show">
+        <div class="header" style="text-align:center">
+            <label>Name:</label>
+            </div>
+</ng-container>
+</div>
+
+<div class="image1">
+</div>
+
+<div>
+<ngu-carousel
+      [inputs]="carouselTile"
+      (initData)="initDataFn($event)"
+      (carouselLoad)="carouselTileLoad($event)">
+
+            <ngu-tile NguCarouselItem *ngFor="let Tile of carouselTileItems">
+			<div class="tile" [style.background]="'url(' + Tile + ')'" style="min-height: 200px">
+                
+			</div>	
+            </ngu-tile>
+			<button NguCarouselPrev class='leftRs'>&lt;</button>
+            <button NguCarouselNext class='rightRs'>&gt;</button>
+</ngu-carousel> 
+</div>
+
+
+
+
+
+
