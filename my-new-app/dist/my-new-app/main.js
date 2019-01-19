@@ -2681,7 +2681,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\r\n/*! Flickity v2.1.2\r\nhttps://flickity.metafizzy.co\r\n---------------------------------------------- */\r\n\r\n.flickity-enabled {\r\n  position: relative;\r\n}\r\n\r\n.flickity-enabled:focus { outline: none; }\r\n\r\n.flickity-viewport {\r\n  overflow: hidden;\r\n  position: relative;\r\n  height: 100%;\r\n}\r\n\r\n.flickity-slider {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n/* draggable */\r\n\r\n.flickity-enabled.is-draggable {\r\n  -webkit-tap-highlight-color: transparent;\r\n          tap-highlight-color: transparent;\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n}\r\n\r\n.flickity-enabled.is-draggable .flickity-viewport {\r\n  cursor: move;\r\n  cursor: -webkit-grab;\r\n  cursor: grab;\r\n}\r\n\r\n.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {\r\n  cursor: -webkit-grabbing;\r\n  cursor: grabbing;\r\n}\r\n\r\n/* ---- flickity-button ---- */\r\n\r\n.flickity-button {\r\n  position: absolute;\r\n  background: hsla(0, 0%, 100%, 0.75);\r\n  border: none;\r\n  color: #333;\r\n}\r\n\r\n.flickity-button:hover {\r\n  background: white;\r\n  cursor: pointer;\r\n}\r\n\r\n.flickity-button:focus {\r\n  outline: none;\r\n  box-shadow: 0 0 0 5px #19F;\r\n}\r\n\r\n.flickity-button:active {\r\n  opacity: 0.6;\r\n}\r\n\r\n.flickity-button:disabled {\r\n  opacity: 0.3;\r\n  cursor: auto;\r\n  /* prevent disabled button from capturing pointer up event. #716 */\r\n  pointer-events: none;\r\n}\r\n\r\n.flickity-button-icon {\r\n  fill: #333;\r\n}\r\n\r\n/* ---- previous/next buttons ---- */\r\n\r\n.flickity-prev-next-button {\r\n  top: 50%;\r\n  width: 44px;\r\n  height: 44px;\r\n  border-radius: 50%;\r\n  /* vertically center */\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n}\r\n\r\n.flickity-prev-next-button.previous { left: 10px; }\r\n\r\n.flickity-prev-next-button.next { right: 10px; }\r\n\r\n/* right to left */\r\n\r\n.flickity-rtl .flickity-prev-next-button.previous {\r\n  left: auto;\r\n  right: 10px;\r\n}\r\n\r\n.flickity-rtl .flickity-prev-next-button.next {\r\n  right: auto;\r\n  left: 10px;\r\n}\r\n\r\n.flickity-prev-next-button .flickity-button-icon {\r\n  position: absolute;\r\n  left: 20%;\r\n  top: 20%;\r\n  width: 60%;\r\n  height: 60%;\r\n}\r\n\r\n/* ---- page dots ---- */\r\n\r\n.flickity-page-dots {\r\n  position: absolute;\r\n  width: 100%;\r\n  bottom: -25px;\r\n  padding: 0;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n  line-height: 1;\r\n}\r\n\r\n.flickity-rtl .flickity-page-dots { direction: rtl; }\r\n\r\n.flickity-page-dots .dot {\r\n  display: inline-block;\r\n  width: 10px;\r\n  height: 10px;\r\n  margin: 0 8px;\r\n  background: #333;\r\n  border-radius: 50%;\r\n  opacity: 0.25;\r\n  cursor: pointer;\r\n}\r\n\r\n.flickity-page-dots .dot.is-selected {\r\n  opacity: 1;\r\n}\r\n\r\n/* Flickity fullscreen v1.0.1\r\n------------------------- */\r\n\r\n.flickity-enabled.is-fullscreen {\r\n  position: fixed;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: hsla(0, 0%, 0%, 0.9);\r\n  padding-bottom: 35px;\r\n  z-index: 1;\r\n}\r\n\r\n.flickity-enabled.is-fullscreen .flickity-page-dots {\r\n  bottom: 10px;\r\n}\r\n\r\n.flickity-enabled.is-fullscreen .flickity-page-dots .dot {\r\n  background: white;\r\n}\r\n\r\n/* prevent page scrolling when flickity is fullscreen */\r\n\r\nhtml.is-flickity-fullscreen {\r\n  overflow: hidden;\r\n}\r\n\r\n/* ---- flickity-fullscreen-button ---- */\r\n\r\n.flickity-fullscreen-button {\r\n  display: block;\r\n  right: 10px;\r\n  top: 10px;\r\n  width: 24px;\r\n  height: 24px;\r\n  border-radius: 4px;\r\n}\r\n\r\n/* right-to-left */\r\n\r\n.flickity-rtl .flickity-fullscreen-button {\r\n  right: auto;\r\n  left: 10px;\r\n}\r\n\r\n.flickity-fullscreen-button-exit { display: none; }\r\n\r\n.flickity-enabled.is-fullscreen .flickity-fullscreen-button-exit { display: block; }\r\n\r\n.flickity-enabled.is-fullscreen .flickity-fullscreen-button-view { display: none; }\r\n\r\n.flickity-fullscreen-button .flickity-button-icon {\r\n  position: absolute;\r\n  width: 16px;\r\n  height: 16px;\r\n  left: 4px;\r\n  top: 4px;\r\n}\r\n\r\nh1{\r\n      min-height: 200px;\r\n      background-color: #ccc;\r\n      text-align: center;\r\n      line-height: 200px;\r\n    }\r\n\r\n.leftRs {\r\n        position: absolute;\r\n        margin: auto;\r\n        top: 0;\r\n        bottom: 0;\r\n        width: 50px;\r\n        height: 50px;\r\n        box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);\r\n        border-radius: 999px;\r\n        left: 0;\r\n    }\r\n\r\n.rightRs {\r\n        position: absolute;\r\n        margin: auto;\r\n        top: 0;\r\n        bottom: 0;\r\n        width: 50px;\r\n        height: 50px;\r\n        box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);\r\n        border-radius: 999px;\r\n        right: 0;\r\n    }\r\n\r\n\r\n\r\n\r\n\r\n"
+module.exports = "\r\n/*! Flickity v2.1.2\r\nhttps://flickity.metafizzy.co\r\n---------------------------------------------- */\r\n\r\n.flickity-enabled {\r\n  position: relative;\r\n}\r\n\r\n.flickity-enabled:focus { outline: none; }\r\n\r\n.flickity-viewport {\r\n  overflow: hidden;\r\n  position: relative;\r\n  height: 100%;\r\n}\r\n\r\n.flickity-slider {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n/* draggable */\r\n\r\n.flickity-enabled.is-draggable {\r\n  -webkit-tap-highlight-color: transparent;\r\n          tap-highlight-color: transparent;\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n      -ms-user-select: none;\r\n          user-select: none;\r\n}\r\n\r\n.flickity-enabled.is-draggable .flickity-viewport {\r\n  cursor: move;\r\n  cursor: -webkit-grab;\r\n  cursor: grab;\r\n}\r\n\r\n.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {\r\n  cursor: -webkit-grabbing;\r\n  cursor: grabbing;\r\n}\r\n\r\n/* ---- flickity-button ---- */\r\n\r\n.flickity-button {\r\n  position: absolute;\r\n  background: hsla(0, 0%, 100%, 0.75);\r\n  border: none;\r\n  color: #333;\r\n}\r\n\r\n.flickity-button:hover {\r\n  background: white;\r\n  cursor: pointer;\r\n}\r\n\r\n.flickity-button:focus {\r\n  outline: none;\r\n  box-shadow: 0 0 0 5px #19F;\r\n}\r\n\r\n.flickity-button:active {\r\n  opacity: 0.6;\r\n}\r\n\r\n.flickity-button:disabled {\r\n  opacity: 0.3;\r\n  cursor: auto;\r\n  /* prevent disabled button from capturing pointer up event. #716 */\r\n  pointer-events: none;\r\n}\r\n\r\n.flickity-button-icon {\r\n  fill: #333;\r\n}\r\n\r\n/* ---- previous/next buttons ---- */\r\n\r\n.flickity-prev-next-button {\r\n  top: 50%;\r\n  width: 44px;\r\n  height: 44px;\r\n  border-radius: 50%;\r\n  /* vertically center */\r\n  -webkit-transform: translateY(-50%);\r\n          transform: translateY(-50%);\r\n}\r\n\r\n.flickity-prev-next-button.previous { left: 10px; }\r\n\r\n.flickity-prev-next-button.next { right: 10px; }\r\n\r\n/* right to left */\r\n\r\n.flickity-rtl .flickity-prev-next-button.previous {\r\n  left: auto;\r\n  right: 10px;\r\n}\r\n\r\n.flickity-rtl .flickity-prev-next-button.next {\r\n  right: auto;\r\n  left: 10px;\r\n}\r\n\r\n.flickity-prev-next-button .flickity-button-icon {\r\n  position: absolute;\r\n  left: 20%;\r\n  top: 20%;\r\n  width: 60%;\r\n  height: 60%;\r\n}\r\n\r\n/* ---- page dots ---- */\r\n\r\n.flickity-page-dots {\r\n  position: absolute;\r\n  width: 100%;\r\n  bottom: -25px;\r\n  padding: 0;\r\n  margin: 0;\r\n  list-style: none;\r\n  text-align: center;\r\n  line-height: 1;\r\n}\r\n\r\n.flickity-rtl .flickity-page-dots { direction: rtl; }\r\n\r\n.flickity-page-dots .dot {\r\n  display: inline-block;\r\n  width: 10px;\r\n  height: 10px;\r\n  margin: 0 8px;\r\n  background: #333;\r\n  border-radius: 50%;\r\n  opacity: 0.25;\r\n  cursor: pointer;\r\n}\r\n\r\n.flickity-page-dots .dot.is-selected {\r\n  opacity: 1;\r\n}\r\n\r\n/* Flickity fullscreen v1.0.1\r\n------------------------- */\r\n\r\n.flickity-enabled.is-fullscreen {\r\n  position: fixed;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  background: hsla(0, 0%, 0%, 0.9);\r\n  padding-bottom: 35px;\r\n  z-index: 1;\r\n}\r\n\r\n.flickity-enabled.is-fullscreen .flickity-page-dots {\r\n  bottom: 10px;\r\n}\r\n\r\n.flickity-enabled.is-fullscreen .flickity-page-dots .dot {\r\n  background: white;\r\n}\r\n\r\n/* prevent page scrolling when flickity is fullscreen */\r\n\r\nhtml.is-flickity-fullscreen {\r\n  overflow: hidden;\r\n}\r\n\r\n/* ---- flickity-fullscreen-button ---- */\r\n\r\n.flickity-fullscreen-button {\r\n  display: block;\r\n  right: 10px;\r\n  top: 10px;\r\n  width: 24px;\r\n  height: 24px;\r\n  border-radius: 4px;\r\n}\r\n\r\n/* right-to-left */\r\n\r\n.flickity-rtl .flickity-fullscreen-button {\r\n  right: auto;\r\n  left: 10px;\r\n}\r\n\r\n.flickity-fullscreen-button-exit { display: none; }\r\n\r\n.flickity-enabled.is-fullscreen .flickity-fullscreen-button-exit { display: block; }\r\n\r\n.flickity-enabled.is-fullscreen .flickity-fullscreen-button-view { display: none; }\r\n\r\n.flickity-fullscreen-button .flickity-button-icon {\r\n  position: absolute;\r\n  width: 16px;\r\n  height: 16px;\r\n  left: 4px;\r\n  top: 4px;\r\n}\r\n\r\nbody {\r\n    padding: 0px;\r\n\tmargin: 0px;\r\n}\r\n\r\nh1{\r\n      min-height: 200px;\r\n      background-color: #ccc;\r\n      text-align: center;\r\n      line-height: 200px;\r\n    }\r\n\r\n.leftRs {\r\n        position: absolute;\r\n        margin: auto;\r\n        top: 0;\r\n        bottom: 0;\r\n        width: 50px;\r\n        height: 50px;\r\n        box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);\r\n        border-radius: 999px;\r\n        left: 0;\r\n    }\r\n\r\n.rightRs {\r\n        position: absolute;\r\n        margin: auto;\r\n        top: 0;\r\n        bottom: 0;\r\n        width: 50px;\r\n        height: 50px;\r\n        box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);\r\n        border-radius: 999px;\r\n        right: 0;\r\n    }\r\n\r\n.header1{\r\n\tbackground-color:#f9b0b0;\r\n  \theight: 60px;\r\n\tposition: fixed;\r\n    text-align: center;\r\n    top: 0;\r\n    cursor: pointer;\r\n\twidth:99%;\r\n}\r\n\r\n.image1{\r\n     height:40em; background-size:cover; width:auto;\r\n     background-image: url('image6.jpg');\r\n     background-position:50% 50%;\r\n   }\r\n\r\n.image2{\r\n        height:40em; background-size:cover; width:auto;\r\n        background-image: url('image7.jpg');\r\n        background-position:50% 50%;\r\n      }\r\n\r\n.menu {\r\n    height: 60px;\r\n    width: 100%;\r\n    background-color: #fff;\r\n    padding: 0px;\r\n    position: fixed;\r\n    z-index: 10;\r\n}\r\n\r\n.menu1 {\r\n    height: 60px;\r\n    width: 100%;\r\n    background-color: #f9b0b0;\r\n    padding: 0 80px;\r\n    position: relative;\r\n    z-index: 10;\r\n    cursor: pointer;\r\n}\r\n\r\n.menu4{\r\n\tbackground-color:#f9b0b0;\r\n  \theight: 150px;\r\n\tposition: fixed;\r\n    width: 100%;\r\n    text-align: center;\r\n    padding: 10px;\r\n    z-index: 3;\r\n    top: 50;\r\n    cursor: pointer;\r\n    left:0%;\r\n\r\n }\r\n\r\n.header{\r\n\t  top: 0;\r\n\t  height: 60px;\r\n\t  background-color:#f9b0b0;\r\n\t  width:auto;\r\n}\r\n\r\n"
 
 /***/ }),
 
@@ -2692,7 +2692,7 @@ module.exports = "\r\n/*! Flickity v2.1.2\r\nhttps://flickity.metafizzy.co\r\n--
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\">\n</div>\n<h2>Here are some links to help you start: </h2>\n<!-- <ul> -->\n  <!-- <li> -->\n    <!-- <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://angular.io/tutorial\">Tour of Heroes</a></h2> -->\n  <!-- </li> -->\n  <!-- <li> -->\n    <!-- <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://github.com/angular/angular-cli/wiki\">CLI Documentation</a></h2> -->\n  <!-- </li> -->\n  <!-- <li> -->\n    <!-- <h2><a target=\"_blank\" rel=\"noopener\" href=\"https://blog.angular.io/\">Angular blog</a></h2> -->\n  <!-- </li> -->\n<!-- </ul> -->\n\n\n<!-- <button class=\"flickity-prev-next-button\">Press</button> -->\n\n\n\n<div>\n\n<ngu-carousel\n      [inputs]=\"carouselTile\"\n      (initData)=\"initDataFn($event)\"\n      (carouselLoad)=\"carouselTileLoad($event)\">\n\n            <ngu-tile NguCarouselItem *ngFor=\"let Tile of carouselTileItems\">\n\t\t\t<div class=\"tile\" [style.background]=\"'url(' + Tile + ')'\" style=\"min-height: 200px\">\n                \n\t\t\t</div>\t\n            </ngu-tile>\n\t\t\t<button NguCarouselPrev class='leftRs'>&lt;</button>\n          <button NguCarouselNext class='rightRs'>&gt;</button>\n<!--\n<button NguCarouselNext class=\"flickity-button flickity-prev-next-button next\" type=\"button\" aria-label=\"Next\">\n<svg class=\"flickity-button-icon\" viewBox=\"0 0 100 100\">\n<path d=\"M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z\" class=\"arrow\" transform=\"translate(100, 100) rotate(180) \">\n</path>\n</svg>\n</button>\n\n<button NguCarouselPrev class=\"flickity-button flickity-prev-next-button previous\" type=\"button\" aria-label=\"Previous\">\n<svg class=\"flickity-button-icon\" viewBox=\"0 0 100 100\">\n<path d=\"M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z\" class=\"arrow\"></path>\n</svg>\n</button> -->\n</ngu-carousel> \n</div>"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<script src=\"https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes\"></script>\n\n<div>\n<router-outlet></router-outlet>\n</div>\n\n"
 
 /***/ }),
 
@@ -2708,6 +2708,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _ngu_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ngu/carousel */ "./node_modules/@ngu/carousel/index.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2719,10 +2720,14 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
 var AppComponent = /** @class */ (function () {
     function AppComponent(carousel) {
         this.carousel = carousel;
         this.title = 'my-new-app';
+        this.state = 'hide';
+        this.show = false;
+        this.buttonName = 'Menu';
     }
     AppComponent.prototype.ngOnInit = function () {
         this.carouselTileItems = [
@@ -2758,11 +2763,51 @@ var AppComponent = /** @class */ (function () {
             }
         }
     };
+    AppComponent.prototype.checkScroll = function () {
+        //const componentPosition = this.el.nativeElement.offsetTop;
+        var componentPosition = 300;
+        var scrollPosition = window.pageYOffset;
+        if (scrollPosition >= componentPosition) {
+            this.state = 'show';
+        }
+        else {
+            this.state = 'hide';
+            this.show = false;
+            this.buttonName = "Menu";
+        }
+    };
+    AppComponent.prototype.toggle = function () {
+        this.show = !this.show;
+        if (this.show)
+            this.buttonName = "Close";
+        else
+            this.buttonName = "Menu";
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('window:scroll', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], AppComponent.prototype, "checkScroll", null);
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('scrollAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 0,
+                        transform: "translateY(-100%)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('show => hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-out')),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('hide => show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-in'))
+                ])
+            ]
         }),
         __metadata("design:paramtypes", [_ngu_carousel__WEBPACK_IMPORTED_MODULE_1__["NguCarouselService"]])
     ], AppComponent);
@@ -2786,7 +2831,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _ngu_carousel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ngu/carousel */ "./node_modules/@ngu/carousel/index.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "./src/app/home/home.component.ts");
+/* harmony import */ var _posts_list_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./posts/list.component */ "./src/app/posts/list.component.ts");
+/* harmony import */ var _product1_product1_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./product1/product1.component */ "./src/app/product1/product1.component.ts");
+/* harmony import */ var _product2_product2_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./product2/product2.component */ "./src/app/product2/product2.component.ts");
+/* harmony import */ var _product3_product3_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./product3/product3.component */ "./src/app/product3/product3.component.ts");
+/* harmony import */ var _product4_product4_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./product4/product4.component */ "./src/app/product4/product4.component.ts");
+/* harmony import */ var _product5_product5_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./product5/product5.component */ "./src/app/product5/product5.component.ts");
+/* harmony import */ var _menu_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./menu.component */ "./src/app/menu.component.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/esm5/router.js");
+/* harmony import */ var _services_echo_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./services/echo.service */ "./src/app/services/echo.service.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2797,23 +2854,867 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"], _menu_component__WEBPACK_IMPORTED_MODULE_11__["MenuComponent"], _posts_list_component__WEBPACK_IMPORTED_MODULE_5__["ListComponent"], _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"], _product1_product1_component__WEBPACK_IMPORTED_MODULE_6__["Product1Component"],
+                _product2_product2_component__WEBPACK_IMPORTED_MODULE_7__["Product2Component"], _product3_product3_component__WEBPACK_IMPORTED_MODULE_8__["Product3Component"], _product4_product4_component__WEBPACK_IMPORTED_MODULE_9__["Product4Component"], _product5_product5_component__WEBPACK_IMPORTED_MODULE_10__["Product5Component"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
-                _ngu_carousel__WEBPACK_IMPORTED_MODULE_2__["NguCarouselModule"]
+                _ngu_carousel__WEBPACK_IMPORTED_MODULE_2__["NguCarouselModule"],
+                _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_14__["HttpClientModule"],
+                _angular_router__WEBPACK_IMPORTED_MODULE_12__["RouterModule"].forRoot([
+                    {
+                        path: '',
+                        pathMatch: 'full',
+                        redirectTo: '/home'
+                    },
+                    { path: 'home', component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"] },
+                    { path: 'posts', component: _posts_list_component__WEBPACK_IMPORTED_MODULE_5__["ListComponent"] },
+                    { path: 'product1', component: _product1_product1_component__WEBPACK_IMPORTED_MODULE_6__["Product1Component"] },
+                    { path: 'product2', component: _product2_product2_component__WEBPACK_IMPORTED_MODULE_7__["Product2Component"] },
+                    { path: 'product3', component: _product3_product3_component__WEBPACK_IMPORTED_MODULE_8__["Product3Component"] },
+                    { path: 'product4', component: _product4_product4_component__WEBPACK_IMPORTED_MODULE_9__["Product4Component"] },
+                    { path: 'product5', component: _product5_product5_component__WEBPACK_IMPORTED_MODULE_10__["Product5Component"] }
+                ])
             ],
-            providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
+            providers: [_services_echo_service__WEBPACK_IMPORTED_MODULE_13__["EchoService"]],
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.html":
+/*!******************************************!*\
+  !*** ./src/app/home/home.component.html ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<script src=\"https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes\"></script>\r\n\r\n<!--\r\n<div>\r\n<menu></menu><router-outlet></router-outlet>\r\n</div> -->\r\n\r\n<div style=\"text-align:center\">\r\n  <h1>\r\n    <img  style=\"align:center\" width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\">\r\n  </h1>\r\n   <!-- <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"> \r\n  <img width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\"> -->\r\n</div>\r\n<h2>Here are some links to help you start: </h2>\r\n\r\n\r\n<div  class=\"header1\" [@scrollAnimation]=\"state\" >\r\n<p (click)=\"toggle()\" id=\"bt\">{{buttonName}}</p>\r\n<ng-container *ngIf=\"show\">\r\n        <div class=\"header\" style=\"text-align:center\">\r\n            <label>Name:</label>\r\n            </div>\r\n</ng-container>\r\n</div>\r\n\r\n<div class=\"image1\">\r\n</div>\r\n\r\n<div>\r\n<ngu-carousel\r\n      [inputs]=\"carouselTile\"\r\n      (initData)=\"initDataFn($event)\"\r\n      (carouselLoad)=\"carouselTileLoad($event)\">\r\n\r\n            <ngu-tile NguCarouselItem *ngFor=\"let Tile of carouselTileItems\">\r\n\t\t\t<div class=\"tile\" [style.background]=\"'url(' + Tile + ')'\" style=\"min-height: 200px\">\r\n            <a href=\"'http://localhost:4200/product'+${}\">Click here to know about this product</a>    \r\n\t\t\t</div>\r\n            </ngu-tile>\r\n\t\t\t<button NguCarouselPrev class='leftRs'>&lt;</button>\r\n            <button NguCarouselNext class='rightRs'>&gt;</button>\r\n</ngu-carousel> \r\n</div>\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/home/home.component.ts":
+/*!****************************************!*\
+  !*** ./src/app/home/home.component.ts ***!
+  \****************************************/
+/*! exports provided: HomeComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ngu_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @ngu/carousel */ "./node_modules/@ngu/carousel/index.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var HomeComponent = /** @class */ (function () {
+    function HomeComponent(carousel) {
+        this.carousel = carousel;
+        this.title = 'my-new-app';
+        this.state = 'hide';
+        this.show = false;
+        this.buttonName = 'Menu';
+    }
+    HomeComponent.prototype.ngOnInit = function () {
+        this.productItems = ['product1', 'product2', 'product3', 'product4', 'product5', 'product5', 'product5', 'product5'];
+        this.carouselTileItems = [
+            '../assets/image1.jpg', '../assets/image2.jpg', '../assets/image3.jpg', '../assets/image4.jpg', '../assets/image5.jpg', '../assets/image6.jpg', '../assets/image7.jpg', '../assets/image8.jpg'
+        ];
+        this.carouselTile = {
+            grid: { xs: 2, sm: 3, md: 3, lg: 5, all: 0 },
+            slide: 2,
+            speed: 400,
+            animation: 'lazy',
+            point: {
+                visible: true
+            },
+            load: 2,
+            touch: true,
+            easing: 'ease'
+        };
+    };
+    HomeComponent.prototype.initDataFn = function (key) {
+        this.carouselToken = key.token;
+    };
+    HomeComponent.prototype.resetFn = function () {
+        this.carousel.reset(this.carouselToken);
+    };
+    HomeComponent.prototype.moveToSlide = function () {
+        this.carousel.moveToSlide(this.carouselToken, 2, false);
+    };
+    HomeComponent.prototype.carouselTileLoad = function (evt) {
+        var len = this.carouselTileItems.length;
+        if (len <= 30) {
+            for (var i = len; i < len; i++) {
+                this.carouselTileItems.push(i);
+            }
+        }
+    };
+    HomeComponent.prototype.checkScroll = function () {
+        //const componentPosition = this.el.nativeElement.offsetTop;
+        var componentPosition = 300;
+        var scrollPosition = window.pageYOffset;
+        if (scrollPosition >= componentPosition) {
+            this.state = 'show';
+        }
+        else {
+            this.state = 'hide';
+            this.show = false;
+            this.buttonName = "Menu";
+        }
+    };
+    HomeComponent.prototype.toggle = function () {
+        this.show = !this.show;
+        if (this.show)
+            this.buttonName = "Close";
+        else
+            this.buttonName = "Menu";
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["HostListener"])('window:scroll', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], HomeComponent.prototype, "checkScroll", null);
+    HomeComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            template: __webpack_require__(/*! ./home.component.html */ "./src/app/home/home.component.html"),
+            styles: [__webpack_require__(/*! ../app.component.css */ "./src/app/app.component.css")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('scrollAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 0,
+                        transform: "translateY(-100%)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('show => hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-out')),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('hide => show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-in'))
+                ])
+            ]
+        }),
+        __metadata("design:paramtypes", [_ngu_carousel__WEBPACK_IMPORTED_MODULE_1__["NguCarouselService"]])
+    ], HomeComponent);
+    return HomeComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/menu.component.ts":
+/*!***********************************!*\
+  !*** ./src/app/menu.component.ts ***!
+  \***********************************/
+/*! exports provided: MenuComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MenuComponent", function() { return MenuComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+var MenuComponent = /** @class */ (function () {
+    function MenuComponent() {
+    }
+    MenuComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'menu',
+            template: "\n      <ul>\n          <li><a routerLink=\"home\" routerLinkActive=\"active\">Home</a></li>\n          <li><a routerLink=\"posts\" routerLinkActive=\"active\">Posts list</a></li>\n      </ul>\n  ",
+            styles: ["\n      :host {margin: 0; padding: 0}\n      ul {list-style-type: none; padding: 0;}\n      li {display: inline-block;}\n      a {border: 1px solid #666666; background: #aaaaaa; border-radius: 5px; box-shadow: 1px 1px 5px black; color: white; font-weight: bold; padding: 5px; text-decoration: none}\n      a.active {text-decoration: underline; color: darkslategray;}\n      li + li a {margin-left: 20px;}\n  "]
+        })
+    ], MenuComponent);
+    return MenuComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/posts/list.component.html":
+/*!*******************************************!*\
+  !*** ./src/app/posts/list.component.html ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<script src=\"https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes\"></script>\r\n\r\n<!--\r\n<div>\r\n<menu></menu><router-outlet></router-outlet>\r\n</div> -->\r\n\r\n<div style=\"text-align:center\">\r\n  <h1>\r\n    <img  style=\"align:center\" width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\">\r\n  </h1>\r\n   <!-- <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"> \r\n  <img width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\"> -->\r\n</div>\r\n<h2>Here are some links to help you start: </h2>\r\n\r\n\r\n<div  class=\"header1\" [@scrollAnimation]=\"state\" >\r\n<p (click)=\"toggle()\" id=\"bt\">{{buttonName}}</p>\r\n<ng-container *ngIf=\"show\">\r\n        <div class=\"header\" style=\"text-align:center\">\r\n            <label>Name:</label>\r\n            </div>\r\n</ng-container>\r\n</div>\r\n\r\n<div class=\"image1\">\r\n<h1>Posts list</h1>\r\n<ul>\r\n<li *ngFor=\"let post of posts | async\">\r\n        {{post.id}} - {{post.title}}\r\n</li>\r\n</ul>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/posts/list.component.ts":
+/*!*****************************************!*\
+  !*** ./src/app/posts/list.component.ts ***!
+  \*****************************************/
+/*! exports provided: ListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListComponent", function() { return ListComponent; });
+/* harmony import */ var _services_echo_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/echo.service */ "./src/app/services/echo.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var ListComponent = /** @class */ (function () {
+    function ListComponent(echoService) {
+        this.echoService = echoService;
+        this.title = 'my-new-app';
+        this.state = 'hide';
+        this.show = false;
+        this.buttonName = 'Menu';
+    }
+    ListComponent.prototype.ngOnInit = function () {
+        this.posts = this.echoService.getPosts();
+    };
+    ListComponent.prototype.checkScroll = function () {
+        //const componentPosition = this.el.nativeElement.offsetTop;
+        var componentPosition = 300;
+        var scrollPosition = window.pageYOffset;
+        if (scrollPosition >= componentPosition) {
+            this.state = 'show';
+        }
+        else {
+            this.state = 'hide';
+            this.show = false;
+            this.buttonName = "Menu";
+        }
+    };
+    ListComponent.prototype.toggle = function () {
+        this.show = !this.show;
+        if (this.show)
+            this.buttonName = "Close";
+        else
+            this.buttonName = "Menu";
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:scroll', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], ListComponent.prototype, "checkScroll", null);
+    ListComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./list.component.html */ "./src/app/posts/list.component.html"),
+            styles: [__webpack_require__(/*! ../app.component.css */ "./src/app/app.component.css")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('scrollAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 0,
+                        transform: "translateY(-100%)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('show => hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-out')),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('hide => show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-in'))
+                ])
+            ]
+        }),
+        __metadata("design:paramtypes", [_services_echo_service__WEBPACK_IMPORTED_MODULE_0__["EchoService"]])
+    ], ListComponent);
+    return ListComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/product1/product1.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/product1/product1.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<script src=\"https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes\"></script>\r\n\r\n<!--\r\n<div>\r\n<menu></menu><router-outlet></router-outlet>\r\n</div> -->\r\n\r\n<div style=\"text-align:center\">\r\n  <h1>\r\n    <img  style=\"align:center\" width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\">\r\n  </h1>\r\n   <!-- <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"> \r\n  <img width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\"> -->\r\n</div>\r\n<h2>Here are some links to help you start: </h2>\r\n\r\n\r\n<div  class=\"header1\" [@scrollAnimation]=\"state\" >\r\n<p (click)=\"toggle()\" id=\"bt\">{{buttonName}}</p>\r\n<ng-container *ngIf=\"show\">\r\n        <div class=\"header\" style=\"text-align:center\">\r\n            <label>Name:</label>\r\n            </div>\r\n</ng-container>\r\n</div>\r\n\r\n<div class=\"image1\">\r\n<h1>Posts list</h1>\r\n<ul>\r\n<li *ngFor=\"let post of posts | async\">\r\n        {{post.id}} - {{post.title}}\r\n</li>\r\n</ul>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/product1/product1.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/product1/product1.component.ts ***!
+  \************************************************/
+/*! exports provided: Product1Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product1Component", function() { return Product1Component; });
+/* harmony import */ var _services_echo_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/echo.service */ "./src/app/services/echo.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Product1Component = /** @class */ (function () {
+    function Product1Component(echoService) {
+        this.echoService = echoService;
+        this.title = 'my-new-app';
+        this.state = 'hide';
+        this.show = false;
+        this.buttonName = 'Menu';
+    }
+    Product1Component.prototype.ngOnInit = function () {
+        this.posts = this.echoService.getPosts();
+    };
+    Product1Component.prototype.checkScroll = function () {
+        //const componentPosition = this.el.nativeElement.offsetTop;
+        var componentPosition = 300;
+        var scrollPosition = window.pageYOffset;
+        if (scrollPosition >= componentPosition) {
+            this.state = 'show';
+        }
+        else {
+            this.state = 'hide';
+            this.show = false;
+            this.buttonName = "Menu";
+        }
+    };
+    Product1Component.prototype.toggle = function () {
+        this.show = !this.show;
+        if (this.show)
+            this.buttonName = "Close";
+        else
+            this.buttonName = "Menu";
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:scroll', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], Product1Component.prototype, "checkScroll", null);
+    Product1Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./product1.component.html */ "./src/app/product1/product1.component.html"),
+            styles: [__webpack_require__(/*! ../app.component.css */ "./src/app/app.component.css")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('scrollAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 0,
+                        transform: "translateY(-100%)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('show => hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-out')),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('hide => show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-in'))
+                ])
+            ]
+        }),
+        __metadata("design:paramtypes", [_services_echo_service__WEBPACK_IMPORTED_MODULE_0__["EchoService"]])
+    ], Product1Component);
+    return Product1Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/product2/product2.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/product2/product2.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<script src=\"https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes\"></script>\r\n\r\n<!--\r\n<div>\r\n<menu></menu><router-outlet></router-outlet>\r\n</div> -->\r\n\r\n<div style=\"text-align:center\">\r\n  <h1>\r\n    <img  style=\"align:center\" width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\">\r\n  </h1>\r\n   <!-- <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"> \r\n  <img width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\"> -->\r\n</div>\r\n<h2>Here are some links to help you start: </h2>\r\n\r\n\r\n<div  class=\"header1\" [@scrollAnimation]=\"state\" >\r\n<p (click)=\"toggle()\" id=\"bt\">{{buttonName}}</p>\r\n<ng-container *ngIf=\"show\">\r\n        <div class=\"header\" style=\"text-align:center\">\r\n            <label>Name:</label>\r\n            </div>\r\n</ng-container>\r\n</div>\r\n\r\n<div class=\"image1\">\r\n<h1>Posts list</h1>\r\n<ul>\r\n<li *ngFor=\"let post of posts | async\">\r\n        {{post.id}} - {{post.title}}\r\n</li>\r\n</ul>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/product2/product2.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/product2/product2.component.ts ***!
+  \************************************************/
+/*! exports provided: Product2Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product2Component", function() { return Product2Component; });
+/* harmony import */ var _services_echo_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/echo.service */ "./src/app/services/echo.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Product2Component = /** @class */ (function () {
+    function Product2Component(echoService) {
+        this.echoService = echoService;
+        this.title = 'my-new-app';
+        this.state = 'hide';
+        this.show = false;
+        this.buttonName = 'Menu';
+    }
+    Product2Component.prototype.ngOnInit = function () {
+        this.posts = this.echoService.getPosts();
+    };
+    Product2Component.prototype.checkScroll = function () {
+        //const componentPosition = this.el.nativeElement.offsetTop;
+        var componentPosition = 300;
+        var scrollPosition = window.pageYOffset;
+        if (scrollPosition >= componentPosition) {
+            this.state = 'show';
+        }
+        else {
+            this.state = 'hide';
+            this.show = false;
+            this.buttonName = "Menu";
+        }
+    };
+    Product2Component.prototype.toggle = function () {
+        this.show = !this.show;
+        if (this.show)
+            this.buttonName = "Close";
+        else
+            this.buttonName = "Menu";
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:scroll', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], Product2Component.prototype, "checkScroll", null);
+    Product2Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./product2.component.html */ "./src/app/product2/product2.component.html"),
+            styles: [__webpack_require__(/*! ../app.component.css */ "./src/app/app.component.css")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('scrollAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 0,
+                        transform: "translateY(-100%)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('show => hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-out')),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('hide => show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-in'))
+                ])
+            ]
+        }),
+        __metadata("design:paramtypes", [_services_echo_service__WEBPACK_IMPORTED_MODULE_0__["EchoService"]])
+    ], Product2Component);
+    return Product2Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/product3/product3.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/product3/product3.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<script src=\"https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes\"></script>\r\n\r\n<!--\r\n<div>\r\n<menu></menu><router-outlet></router-outlet>\r\n</div> -->\r\n\r\n<div style=\"text-align:center\">\r\n  <h1>\r\n    <img  style=\"align:center\" width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\">\r\n  </h1>\r\n   <!-- <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"> \r\n  <img width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\"> -->\r\n</div>\r\n<h2>Here are some links to help you start: </h2>\r\n\r\n\r\n<div  class=\"header1\" [@scrollAnimation]=\"state\" >\r\n<p (click)=\"toggle()\" id=\"bt\">{{buttonName}}</p>\r\n<ng-container *ngIf=\"show\">\r\n        <div class=\"header\" style=\"text-align:center\">\r\n            <label>Name:</label>\r\n            </div>\r\n</ng-container>\r\n</div>\r\n\r\n<div class=\"image1\">\r\n<h1>Posts list</h1>\r\n<ul>\r\n<li *ngFor=\"let post of posts | async\">\r\n        {{post.id}} - {{post.title}}\r\n</li>\r\n</ul>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/product3/product3.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/product3/product3.component.ts ***!
+  \************************************************/
+/*! exports provided: Product3Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product3Component", function() { return Product3Component; });
+/* harmony import */ var _services_echo_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/echo.service */ "./src/app/services/echo.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Product3Component = /** @class */ (function () {
+    function Product3Component(echoService) {
+        this.echoService = echoService;
+        this.title = 'my-new-app';
+        this.state = 'hide';
+        this.show = false;
+        this.buttonName = 'Menu';
+    }
+    Product3Component.prototype.ngOnInit = function () {
+        this.posts = this.echoService.getPosts();
+    };
+    Product3Component.prototype.checkScroll = function () {
+        //const componentPosition = this.el.nativeElement.offsetTop;
+        var componentPosition = 300;
+        var scrollPosition = window.pageYOffset;
+        if (scrollPosition >= componentPosition) {
+            this.state = 'show';
+        }
+        else {
+            this.state = 'hide';
+            this.show = false;
+            this.buttonName = "Menu";
+        }
+    };
+    Product3Component.prototype.toggle = function () {
+        this.show = !this.show;
+        if (this.show)
+            this.buttonName = "Close";
+        else
+            this.buttonName = "Menu";
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:scroll', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], Product3Component.prototype, "checkScroll", null);
+    Product3Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./product3.component.html */ "./src/app/product3/product3.component.html"),
+            styles: [__webpack_require__(/*! ../app.component.css */ "./src/app/app.component.css")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('scrollAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 0,
+                        transform: "translateY(-100%)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('show => hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-out')),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('hide => show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-in'))
+                ])
+            ]
+        }),
+        __metadata("design:paramtypes", [_services_echo_service__WEBPACK_IMPORTED_MODULE_0__["EchoService"]])
+    ], Product3Component);
+    return Product3Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/product4/product4.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/product4/product4.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<script src=\"https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes\"></script>\r\n\r\n<!--\r\n<div>\r\n<menu></menu><router-outlet></router-outlet>\r\n</div> -->\r\n\r\n<div style=\"text-align:center\">\r\n  <h1>\r\n    <img  style=\"align:center\" width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\">\r\n  </h1>\r\n   <!-- <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"> \r\n  <img width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\"> -->\r\n</div>\r\n<h2>Here are some links to help you start: </h2>\r\n\r\n\r\n<div  class=\"header1\" [@scrollAnimation]=\"state\" >\r\n<p (click)=\"toggle()\" id=\"bt\">{{buttonName}}</p>\r\n<ng-container *ngIf=\"show\">\r\n        <div class=\"header\" style=\"text-align:center\">\r\n            <label>Name:</label>\r\n            </div>\r\n</ng-container>\r\n</div>\r\n\r\n<div class=\"image1\">\r\n<h1>Posts list</h1>\r\n<ul>\r\n<li *ngFor=\"let post of posts | async\">\r\n        {{post.id}} - {{post.title}}\r\n</li>\r\n</ul>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/product4/product4.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/product4/product4.component.ts ***!
+  \************************************************/
+/*! exports provided: Product4Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product4Component", function() { return Product4Component; });
+/* harmony import */ var _services_echo_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/echo.service */ "./src/app/services/echo.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Product4Component = /** @class */ (function () {
+    function Product4Component(echoService) {
+        this.echoService = echoService;
+        this.title = 'my-new-app';
+        this.state = 'hide';
+        this.show = false;
+        this.buttonName = 'Menu';
+    }
+    Product4Component.prototype.ngOnInit = function () {
+        this.posts = this.echoService.getPosts();
+    };
+    Product4Component.prototype.checkScroll = function () {
+        //const componentPosition = this.el.nativeElement.offsetTop;
+        var componentPosition = 300;
+        var scrollPosition = window.pageYOffset;
+        if (scrollPosition >= componentPosition) {
+            this.state = 'show';
+        }
+        else {
+            this.state = 'hide';
+            this.show = false;
+            this.buttonName = "Menu";
+        }
+    };
+    Product4Component.prototype.toggle = function () {
+        this.show = !this.show;
+        if (this.show)
+            this.buttonName = "Close";
+        else
+            this.buttonName = "Menu";
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:scroll', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], Product4Component.prototype, "checkScroll", null);
+    Product4Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./product4.component.html */ "./src/app/product4/product4.component.html"),
+            styles: [__webpack_require__(/*! ../app.component.css */ "./src/app/app.component.css")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('scrollAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 0,
+                        transform: "translateY(-100%)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('show => hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-out')),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('hide => show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-in'))
+                ])
+            ]
+        }),
+        __metadata("design:paramtypes", [_services_echo_service__WEBPACK_IMPORTED_MODULE_0__["EchoService"]])
+    ], Product4Component);
+    return Product4Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/product5/product5.component.html":
+/*!**************************************************!*\
+  !*** ./src/app/product5/product5.component.html ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\r\n<script src=\"https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes\"></script>\r\n\r\n<!--\r\n<div>\r\n<menu></menu><router-outlet></router-outlet>\r\n</div> -->\r\n\r\n<div style=\"text-align:center\">\r\n  <h1>\r\n    <img  style=\"align:center\" width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\">\r\n  </h1>\r\n   <!-- <img width=\"300\" alt=\"Angular Logo\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==\"> \r\n  <img width=\"300\" alt=\"Angular Logo\" src=\"../assets/2.jpg\"> -->\r\n</div>\r\n<h2>Here are some links to help you start: </h2>\r\n\r\n\r\n<div  class=\"header1\" [@scrollAnimation]=\"state\" >\r\n<p (click)=\"toggle()\" id=\"bt\">{{buttonName}}</p>\r\n<ng-container *ngIf=\"show\">\r\n        <div class=\"header\" style=\"text-align:center\">\r\n            <label>Name:</label>\r\n            </div>\r\n</ng-container>\r\n</div>\r\n\r\n<div class=\"image1\">\r\n<h1>Posts list</h1>\r\n<ul>\r\n<li *ngFor=\"let post of posts | async\">\r\n        {{post.id}} - {{post.title}}\r\n</li>\r\n</ul>\r\n</div>\r\n\r\n"
+
+/***/ }),
+
+/***/ "./src/app/product5/product5.component.ts":
+/*!************************************************!*\
+  !*** ./src/app/product5/product5.component.ts ***!
+  \************************************************/
+/*! exports provided: Product5Component */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Product5Component", function() { return Product5Component; });
+/* harmony import */ var _services_echo_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../services/echo.service */ "./src/app/services/echo.service.ts");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/animations */ "./node_modules/@angular/animations/fesm5/animations.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var Product5Component = /** @class */ (function () {
+    function Product5Component(echoService) {
+        this.echoService = echoService;
+        this.title = 'my-new-app';
+        this.state = 'hide';
+        this.show = false;
+        this.buttonName = 'Menu';
+    }
+    Product5Component.prototype.ngOnInit = function () {
+        this.posts = this.echoService.getPosts();
+    };
+    Product5Component.prototype.checkScroll = function () {
+        //const componentPosition = this.el.nativeElement.offsetTop;
+        var componentPosition = 300;
+        var scrollPosition = window.pageYOffset;
+        if (scrollPosition >= componentPosition) {
+            this.state = 'show';
+        }
+        else {
+            this.state = 'hide';
+            this.show = false;
+            this.buttonName = "Menu";
+        }
+    };
+    Product5Component.prototype.toggle = function () {
+        this.show = !this.show;
+        if (this.show)
+            this.buttonName = "Close";
+        else
+            this.buttonName = "Menu";
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])('window:scroll', ['$event']),
+        __metadata("design:type", Function),
+        __metadata("design:paramtypes", []),
+        __metadata("design:returntype", void 0)
+    ], Product5Component.prototype, "checkScroll", null);
+    Product5Component = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            template: __webpack_require__(/*! ./product5.component.html */ "./src/app/product5/product5.component.html"),
+            styles: [__webpack_require__(/*! ../app.component.css */ "./src/app/app.component.css")],
+            animations: [
+                Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["trigger"])('scrollAnimation', [
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 1,
+                        transform: "translateY(0)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["state"])('hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["style"])({
+                        opacity: 0,
+                        transform: "translateY(-100%)"
+                    })),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('show => hide', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-out')),
+                    Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["transition"])('hide => show', Object(_angular_animations__WEBPACK_IMPORTED_MODULE_2__["animate"])('700ms ease-in'))
+                ])
+            ]
+        }),
+        __metadata("design:paramtypes", [_services_echo_service__WEBPACK_IMPORTED_MODULE_0__["EchoService"]])
+    ], Product5Component);
+    return Product5Component;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/echo.service.ts":
+/*!******************************************!*\
+  !*** ./src/app/services/echo.service.ts ***!
+  \******************************************/
+/*! exports provided: EchoService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EchoService", function() { return EchoService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var EchoService = /** @class */ (function () {
+    function EchoService(httpClient) {
+        this.httpClient = httpClient;
+    }
+    EchoService.prototype.getPosts = function () {
+        return this.httpClient.get('https://jsonplaceholder.typicode.com/posts');
+    };
+    EchoService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], EchoService);
+    return EchoService;
 }());
 
 
@@ -2883,7 +3784,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\gururaj.mutharayappa\angluar\my-new-app\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\gururaj.mutharayappa\ORD\ORDDevContainer\my-new-app\src\main.ts */"./src/main.ts");
 
 
 /***/ })
