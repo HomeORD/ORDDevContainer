@@ -49,7 +49,9 @@ https://flickity.metafizzy.co
   position: absolute;
   background: hsla(0, 0%, 100%, 0.75);
   border: none;
-  color: #333;
+  color: azure;
+  font: icon;
+  font-family: cursive;
 }
 
 .flickity-button:hover {
@@ -231,7 +233,7 @@ body {
     }
 	
 	.header1{
-	background-color:#f9b0b0;
+	background-color:#417f3c;
   	height: 60px;
 	position: fixed;
     text-align: center;
@@ -241,17 +243,42 @@ body {
 }
 
 .image1{
-     height:40em; background-size:cover; width:auto;
-     background-image: url('../assets/image6.jpg');
-     background-position:50% 50%;
+     height:130em; 
+	 background-size:cover; 
+	 width:auto;
+     background-image: url('../assets/page1.jpg');
+     background-position:100% 100%;
    }
-
+   
    .image2{
         height:40em; background-size:cover; width:auto;
         background-image: url('../assets/image7.jpg');
         background-position:50% 50%;
       }
 
+.image3{
+     height:130em; 
+	 background-size:cover; 
+	 width:auto;
+     background-image: url('../assets/page2.jpg');
+     background-position:100% 100%;
+   }	 
+
+.image4{
+     height:130em; 
+	 background-size:cover; 
+	 width:auto;
+     background-image: url('../assets/page3.jpg');
+     background-position:100% 100%;
+   }
+
+.image5{
+     height:130em; 
+	 background-size:cover; 
+	 width:auto;
+     background-image: url('../assets/page4.jpg');
+     background-position:100% 100%;
+   }   
 
 .menu {
     height: 60px;
@@ -285,11 +312,24 @@ body {
     left:0%;
 
  }
+ 
+ .label {
+    cursor: pointer;
+    color: #ffffff;
+    display: block;
+    padding: 10px;
+    margin: 3px;
+}
 
+.button {
+    color: azure;
+    font: icon;
+    font-family: cursive;
+}
  .header{
 	  top: 0;
 	  height: 60px;
-	  background-color:#f9b0b0;
+	  background-color:#417f3c;
 	  width:auto;
 }
 

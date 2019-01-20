@@ -15,7 +15,7 @@ import {
   animations: [
     trigger('scrollAnimation', [
       state('show', style({
-        opacity: 1,
+		opacity: 1,
         transform: "translateY(0)"
       })),
       state('hide',   style({
@@ -28,7 +28,7 @@ import {
   ]
 })
 export class HomeComponent {
-	  title = 'my-new-app';
+  title = 'my-new-app';
   state = 'hide';
   public show:boolean = false;
   public buttonName:any = 'Menu';
@@ -45,14 +45,14 @@ export class HomeComponent {
 	 
 	this.productItems = ['product1', 'product2', 'product3', 'product4', 'product5', 'product5', 'product5', 'product5'];
 	
-	this.carouselTileItems = [{"id":'../assets/image1.jpg', "name":'product1'},
-							  {"id":'../assets/image2.jpg', "name":'product2'},			
-                              {"id":'../assets/image3.jpg', "name":'product3'},
-                              {"id":'../assets/image4.jpg', "name":'product4'},
-                              {"id":'../assets/image5.jpg', "name":'product5'},
-							  {"id":'../assets/image6.jpg', "name":'product6'},
-							  {"id":'../assets/image7.jpg', "name":'product7'},
-							  {"id":'../assets/image8.jpg', "name":'product8'}
+	this.carouselTileItems = [{"id":'../assets/image9.JPG', "name":'product1'},
+							  {"id":'../assets/image10.jpg', "name":'product2'},			
+                              {"id":'../assets/image11.jpg', "name":'product3'},
+                              {"id":'../assets/image9.jpg', "name":'product4'},
+                              {"id":'../assets/image10.jpg', "name":'product5'},
+							  {"id":'../assets/image11.jpg', "name":'product6'},
+							  {"id":'../assets/image9.jpg', "name":'product7'},
+							  {"id":'../assets/image10.jpg', "name":'product8'}
 							 ];
 							 
     this.carouselTile = {
