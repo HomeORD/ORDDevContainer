@@ -9,6 +9,7 @@ import {
   transition  
 }from '@angular/animations';
 
+
 @Component({
   templateUrl: 'home.component.html',
   styleUrls: ['../app.component.css'],
@@ -98,9 +99,11 @@ export class HomeComponent {
       const componentPosition = 300;
       const scrollPosition = window.pageYOffset;
 
-      if (scrollPosition >= componentPosition) {
+      if (scrollPosition > componentPosition) {
          this.state = 'show'
-      } else {
+      }
+ 
+	  else {
         this.state = 'hide'
 		this.show = false;
 		this.buttonName = "Menu";

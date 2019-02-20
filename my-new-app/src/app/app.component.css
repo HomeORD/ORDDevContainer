@@ -234,12 +234,11 @@ body {
 	
 	.header1{
 	background-color:#417f3c;
-  	height: 60px;
+  	height: 45px;
 	position: fixed;
     text-align: center;
     top: 0;
-    cursor: pointer;
-	width:99%;
+    width:100%;
 }
 
 .image1{

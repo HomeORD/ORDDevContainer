@@ -87,11 +87,16 @@ export class AppComponent {
     checkScroll() {
       //const componentPosition = this.el.nativeElement.offsetTop;
       const componentPosition = 300;
+	  const componentPosition2 = 500;
       const scrollPosition = window.pageYOffset;
 
-      if (scrollPosition >= componentPosition) {
+      if (scrollPosition >= componentPosition || scrollPosition < componentPosition2) {
          this.state = 'show'
-      } else {
+      }
+	  if (scrollPosition > componentPosition2 ) {
+		 this.state = 'hide'
+	  }
+	  else {
         this.state = 'hide'
 		this.show = false;
 		this.buttonName = "Menu";

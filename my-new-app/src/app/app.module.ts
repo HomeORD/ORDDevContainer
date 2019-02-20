@@ -14,14 +14,16 @@ import { MenuComponent } from './menu.component';
 import { RouterModule } from '@angular/router';
 import { EchoService } from './services/echo.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent, MenuComponent, ListComponent, HomeComponent, Product1Component,
-	Product2Component, Product3Component, Product4Component, Product5Component
+	Product2Component, Product3Component, Product4Component, Product5Component, NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +43,8 @@ import { AppComponent } from './app.component';
 	   { path: 'product3', component: Product3Component },
 	   { path: 'product4', component: Product4Component },
 	   { path: 'product5', component: Product5Component }
-     ])
+     ]),
+	 NgbModule.forRoot()
   ],
   providers: [EchoService],
   bootstrap: [AppComponent]

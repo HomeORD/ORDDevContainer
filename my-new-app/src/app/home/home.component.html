@@ -19,17 +19,74 @@
 <h2>Here are some links to help you start: </h2>
 -->
 
-<div  class="header1" [@scrollAnimation]="state" >
+
+
+
+<div  class="header1" [@scrollAnimation]="state">
+<!--
 <p (click)="toggle()" style="
     color: azure;
     font: icon;
     font-family: cursive;
 " id="bt">{{buttonName}}</p>
+-->
+
+
+<!--
 <ng-container *ngIf="show">
-        <div class="header" style="text-align:center">
-            <label class="label">Name:</label>
-            </div>
+<nav class="navbar" >
+	<div class="header" style="text-align:center">
+      <label>Name:</label>
+	</div>
+</nav>
 </ng-container>
+-->
+
+<!--
+<navbar></navbar>
+-->
+
+<!--
+<div class="menu">
+      
+      <div id="btMenu" class="open">
+        <span class="barre"></span>
+        <span class="barre"></span>
+        <span class="barre"></span>
+        <p>Menu</p>
+        <p class="close-label">Close</p>
+      </div>
+
+  </div>
+-->
+
+
+
+
+
+<nav class="row navbar-fixed-top navbar-dark bg-dark" > 
+<div class="col-sm-12 desktop-show">
+	<span class="navbar-brand mb-1 h2">Menu</span>
+	<button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse">
+		<a class="nav-item col-sm-2 nav-link active text-white">
+			Usuario: My name
+		</a>
+		<a class="nav-item nav-link active text-white">
+			Perfil: TODO
+		</a>
+		<button class="nav-item btn btn-outline-warning ml-3 mr-3">Más opciones</button>
+		<a class="nav-item nav-link active text-white" routerLink="/" (click)="authService.logout()">
+			Salir
+			<span class="sr-only">(current)</span>
+		</a>
+	</div>
+	</div>
+</nav> 
+
+
 </div>
 
 <div class="image1">
@@ -43,7 +100,9 @@
 
             <ngu-tile NguCarouselItem *ngFor="let Tile of carouselTileItems"> 
 			<div class="tile" [style.background]="'url(' + Tile.id + ')'" style="min-height: 600px;min-width: 420px"> 
-            <a href="http://localhost:4200/{{Tile.name}}" style="background-color:white; align:center">Click here to know about this product</a>    
+            <a href="http://localhost:4200/{{Tile.name}}" style="background-color:white; align:center">
+			<button>Click here to know about this product</button>
+			</a>    
 			</div>
             </ngu-tile>
 			<button NguCarouselPrev class='leftRs'>&lt;</button>

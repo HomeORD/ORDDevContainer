@@ -1,0 +1,21 @@
+<nav class="navbar navbar-fixed-top navbar-dark bg-dark">
+	<div class="container">
+	</div>
+	<span class="navbar-brand mb-0 h1">Menu</span>
+	<button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+	<div [ngbCollapse]="!isNavbarCollapsed" class="navbar-collapse">
+		<a class="nav-item nav-link active text-white">
+			Usuario: My name
+		</a>
+		<a class="nav-item nav-link active text-white">
+			Perfil: TODO
+		</a>
+		<button class="nav-item btn btn-outline-warning ml-3 mr-3">Más opciones</button>
+		<a class="nav-item nav-link active text-white" routerLink="/" (click)="authService.logout()">
+			Salir
+			<span class="sr-only">(current)</span>
+		</a>
+	</div>
+</nav> 
