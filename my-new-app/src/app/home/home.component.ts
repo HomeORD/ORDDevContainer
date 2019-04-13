@@ -31,6 +31,7 @@ import {
 export class HomeComponent {
   title = 'my-new-app';
   state = 'hide';
+  isNavbarCollapsed = true;
   public show:boolean = false;
   public buttonName:any = 'Menu';
   
@@ -101,12 +102,14 @@ export class HomeComponent {
 
       if (scrollPosition > componentPosition) {
          this.state = 'show'
+		 
       }
  
 	  else {
         this.state = 'hide'
 		this.show = false;
 		this.buttonName = "Menu";
+		this.isNavbarCollapsed = true
       }
 
     }

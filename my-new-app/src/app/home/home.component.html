@@ -22,7 +22,7 @@
 
 
 
-<div  class="header1" [@scrollAnimation]="state">
+<div  class="header1" [@scrollAnimation]="state" [@scrollAnimation]="isNavbarCollapsed"> 
 <!--
 <p (click)="toggle()" style="
     color: azure;
@@ -72,16 +72,20 @@
   </button>
 	<div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse">
 		<a class="nav-item col-sm-2 nav-link active text-white">
-			Usuario: My name
+			Products
 		</a>
-		<a class="nav-item nav-link active text-white">
+		<a class="nav-item col-sm-2 nav-link active text-white" routerLink="/product1" (click)="authService.logout()">
+			Product 1
+			<span class="sr-only">(current)</span>
+		</a>
+		<!--<a class="nav-item nav-link active text-white">
 			Perfil: TODO
 		</a>
 		<button class="nav-item btn btn-outline-warning ml-3 mr-3">Más opciones</button>
 		<a class="nav-item nav-link active text-white" routerLink="/" (click)="authService.logout()">
 			Salir
 			<span class="sr-only">(current)</span>
-		</a>
+		</a> -->
 	</div>
 	</div>
 </nav> 
@@ -110,17 +114,18 @@
 </ngu-carousel> 
 </div>
 
+<!--
 <div class="image3">
 
 </div>
 <div class="image4">
 
 </div>
-<div class="image5">
+<div class="image5"> 
 
 </div>
 
-
+-->
 
 
 

@@ -1,0 +1,152 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script>
+
+
+<div>
+<!--
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+	<div class="container">
+	<a class= "navbar-brand"> Angular check</a>
+
+	<ul class = "nav navbar-nav">
+		<li class="nav-item">Test1</li>
+		<li class="nav-item">Test2</li>
+		<li class="nav-item">Test3</li>
+	</ul>
+	</div>
+</nav>	
+-->
+<nav class='navbar navbar-default'>
+  <div class='container'>
+  <ul class='nav navbar-nav'>
+    <li class='nav-item' dropdown>
+      <a class='nav-link dropdown-toggle' role='button' dropdownToggle>Menu 1<b class='caret'></b></a>
+      <ul class='dropdown-menu'>
+        <li><a class='dropdown-item'>Item 1</a></li>
+        <li><a class='dropdown-item'>Item 2</a></li>
+      </ul>
+    </li>
+    <li class='nav-item' dropdown>
+        <a class='nav-link dropdown-toggle' role='button' dropdownToggle>Menu 2<b class='caret'></b></a>
+        <ul class='dropdown-menu'>
+          <li><a class='dropdown-item'>Item 1</a></li>
+          <li><a class='dropdown-item'>Item 2</a></li>
+        </ul>
+    </li>
+  </ul>
+  </div>
+</nav>
+</div>
+
+
+<!--
+<div>
+<menu></menu><router-outlet></router-outlet>
+</div> 
+
+<!--
+<div style="text-align:center">
+  <h1>
+    <img  style="align:center" width="300" alt="Angular Logo" src="../assets/2.jpg">
+  </h1>
+   <!-- <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="> 
+  <img width="300" alt="Angular Logo" src="../assets/2.jpg"> 
+</div> 
+
+<!--
+<h2>Here are some links to help you start: </h2>
+
+
+<div  class="header1" [@scrollAnimation]="state" >
+<p (click)="toggle()" style="
+    color: azure;
+    font: icon;
+    font-family: cursive;
+" id="bt">{{buttonName}}</p>
+
+
+
+<!--
+<nav class="navbar navbar-inverse navbar-toggleable-md fixed-top bg-faced">
+<button class="navbar-toggler navbar-toggler-right" type="button" (click)="isCollapsed = !isCollapsed">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="#">Tadhvanam</a>
+<div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed" >
+
+<ul class="navbar-nav">
+<li id="item-1">
+<label class="label">Label 1</label>
+</li>
+<li id="item-2">
+<label class="label">Label 2</label>
+</li> 
+</ul>
+</div>
+</nav> 
+
+<ng-container *ngIf="show">
+<nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+	<div class="container">
+	</div>
+<!--	<span class="navbar-brand mb-0 h1">Partes vehículos</span>
+	<button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+	<div [ngbCollapse]="isNavbarCollapsed" class="navbar-collapse">
+		<a class="nav-item nav-link active text-white">
+			Usuario: My name
+		</a>
+		<a class="nav-item nav-link active text-white">
+			Perfil: TODO
+		</a>
+		<button class="nav-item btn btn-outline-warning ml-3 mr-3">Más opciones</button>
+		<a class="nav-item nav-link active text-white" routerLink="/" (click)="authService.logout()">
+			Salir
+			<span class="sr-only">(current)</span>
+		</a>
+	</div>
+</nav> 
+</nav>
+
+</ng-container>
+
+</div>
+
+<div class="image1">
+
+</div>
+<div style=" position:relative; width:100%; height:200px; padding:5px; bottom:5px; ">
+<ngu-carousel
+      [inputs]="carouselTile"
+      (initData)="initDataFn($event)"
+      (carouselLoad)="carouselTileLoad($event)">
+
+            <ngu-tile NguCarouselItem *ngFor="let Tile of carouselTileItems"> 
+			<div class="tile" [style.background]="'url(' + Tile.id + ')'" style="min-height: 600px;min-width: 420px"> 
+            <a href="http://localhost:4200/{{Tile.name}}" style="background-color:white; align:center">
+			<button>Click here to know about this product</button>
+			</a>    
+			</div>
+            </ngu-tile>
+			<button NguCarouselPrev class='leftRs'>&lt;</button>
+            <button NguCarouselNext class='rightRs'>&gt;</button>
+</ngu-carousel> 
+</div>
+
+<div class="image3">
+
+</div>
+<div class="image4">
+
+</div>
+<div class="image5">
+
+</div>
+
+-->
+
+
+
+
+
