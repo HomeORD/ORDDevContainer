@@ -1,6 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script>
-
+<style>
+.align {margin:20px;}
+</style>
 <!--
 <div>
 <menu></menu><router-outlet></router-outlet>
@@ -93,12 +95,15 @@
 
 </div>
 
-<div class="image3">
 
+<div class="image3 align row">
+	<div class="box c col-lg-6"><p>This organic product is very good for health</p></div>
+	<div class="box d col-lg-6"><p>This organic product is very good for health</p></div>
 </div>
+
 <!--
 <div style=" position:relative; width:100%; height:200px; padding:5px; bottom:5px; ">
-<ngu-carousel
+<ngu-carousel 
       [inputs]="carouselTile"
       (initData)="initDataFn($event)"
       (carouselLoad)="carouselTileLoad($event)">
