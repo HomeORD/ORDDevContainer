@@ -1,6 +1,12 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,Array.prototype.includes"></script>
 
+<style>
+#showall {
+  height: 400px;
+  overflow: auto;
+}
+</style>
 <!--
 <div>
 <menu></menu><router-outlet></router-outlet>
@@ -23,6 +29,8 @@
 
 
 <div  class="header1" [@scrollAnimation]="state" [@scrollAnimation]="isNavbarCollapsed"> 
+
+<div class="image1">
 <!--
 <p (click)="toggle()" style="
     color: azure;
@@ -64,7 +72,7 @@
 
 
 
-<nav class="row navbar-fixed-top navbar-dark bg-dark" > 
+<nav class="row navbar-fixed-top navbar-dark bg-dark"> 
 <div class="col-sm-12 desktop-show">
 	<span class="navbar-brand mb-1 h2">Menu</span>
 	<button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed">
@@ -91,14 +99,24 @@
 </nav> 
 
 
+
+<div>
+<p> Organic Products </p>
 </div>
 
+
+
+<!--
 <div class="image1">
 
 </div>
 
-<!--
-<div style=" position:relative; width:100%; height:200px; padding:5px; bottom:5px; ">
+-->
+
+<div class="container">
+<!-- <div class="col-md-1"  style=" position:relative; width:100%; height:200px; padding:5px; bottom:5px; "> -->
+<div class="col-xs-12"  >
+
 
 <ngu-carousel
       [inputs]="carouselTile"
@@ -106,18 +124,57 @@
       (carouselLoad)="carouselTileLoad($event)">
 
             <ngu-tile NguCarouselItem *ngFor="let Tile of carouselTileItems"> 
-			<div class="tile" [style.background]="'url(' + Tile.id + ')'" style="min-height: 600px;min-width: 420px"> 
-            <a href="http://localhost:4200/{{Tile.name}}" style="background-color:white; align:center">
+			<div class="tile" [style.background]="'url(' + Tile.id + ')'" style="min-height: 400px;min-width: 348px"> 
+            <!--<a href="http://localhost:4200/{{Tile.name}}" style="background-color:white; align:center">
 			<button>Click here to know about this product</button>
-			</a>    
+			</a>    -->
 			</div>
             </ngu-tile>
 			<button NguCarouselPrev class='leftRs'>&lt;</button>
             <button NguCarouselNext class='rightRs'>&gt;</button>
 </ngu-carousel> 
+</div>
+</div>
+
+<div>
+<p> Other Products </p>
+</div>
+
+
+
+<!--
+<div class="image1">
 
 </div>
+
 -->
+<div class="container">
+<!--<div class="col-md-1" style=" position:relative; width:100%; height:200px; padding:5px; bottom:5px; "> -->
+<div class="col-xs-12"  >
+
+
+<ngu-carousel
+      [inputs]="carouselTile"
+      (initData)="initDataFn($event)"
+      (carouselLoad)="carouselTileLoad($event)">
+
+            <ngu-tile NguCarouselItem *ngFor="let Tile of carouselTileItems"> 
+			<div class="tile" [style.background]="'url(' + Tile.id + ')'" style="min-height: 400px;min-width: 348px"> 
+            <!--<a href="http://localhost:4200/{{Tile.name}}" style="background-color:white; align:center">
+			<button>Click here to know about this product</button>
+			</a>    -->
+			</div>
+            </ngu-tile>
+			<button NguCarouselPrev class='leftRs'>&lt;</button>
+            <button NguCarouselNext class='rightRs'>&gt;</button>
+</ngu-carousel> 
+</div>
+</div>
+
+</div>
+
+
+</div>
 
 <!--
 <div class="image3">
